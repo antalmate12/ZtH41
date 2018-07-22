@@ -1,0 +1,45 @@
+.fejlec {
+  border:solid red;
+}
+.accord {
+  position: relative;
+}
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.bekuld_btn {
+  margin:10px;
+}
+
+.kozep {
+  position: absolute;
+  top: 50%;
+}
+/*
+.dropdown {
+    position: absolute;
+    display: block;
+    
+    right:0;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    background: rgba(0, 0, 0, .6);
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropbtn {
+    background-color: #3498DB;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+.dropdown:hover .dropdown-content {display: block;}
+*/

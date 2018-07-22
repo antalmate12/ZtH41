@@ -1,0 +1,19 @@
+<div class="kozep container">
+
+<select [(ngModel)]="translationService.language">
+  <option *ngFor="let language of translationService.languages" [ngValue]="language">{{language}}</option>
+</select>
+
+	<h1 class="login_h">{{'login' | translate}}</h1>
+
+	<mat-form-field>
+    <input style="color:white;" [(ngModel)]="loggedInName" #target matInput placeholder="{{'un' | translate}}" value="">
+	</mat-form-field>
+
+	<button mat-raised-button color="primary" (click)="btnClicked(target.value)">
+    {{'login' | translate}}
+</button>
+
+</div>
+
+

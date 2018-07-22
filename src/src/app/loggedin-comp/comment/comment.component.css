@@ -1,0 +1,50 @@
+.commentkerdes {
+  color: black;
+  background: white;
+  overflow-wrap: break-word;
+  border-radius: 5px;
+  padding:10px;
+  margin-bottom:20px;
+}
+.newans_div {
+  width:100%;
+  background: white;
+  color:black;
+  margin-top: 10px;
+  border-radius: 5px;
+  /*padding:10px;*/
+  
+}
+.row_btn {
+  
+}
+
+.btn span.glyphicon {    			
+	opacity: 0;				
+}
+.btn.active span.glyphicon {				
+	opacity: 1;				
+}
+
+li.accept {
+  color: white !important;
+  background: green;
+}
+li.deny {
+  color: white;
+  background: red;
+}
+li.clear{}
+
+.type1{
+  background-color: green;
+  color:white;
+}
+.type0{
+  background-color: white;
+  color:black;
+}
+.type2{
+  background-color: red;
+  color:white;
+}

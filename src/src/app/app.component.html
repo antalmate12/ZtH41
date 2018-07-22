@@ -1,0 +1,25 @@
+<div style="background:#8F68D8;color:white;" class="mat-app-background basic-container">
+
+	<mat-toolbar style="margin-bottom:20px;width:100%;top:0;" color="primary">
+		<mat-toolbar-row>
+			<span class="pointer" title="{{'qatitle' | translate}}" (click)="qaClick()">QA Engine
+			</span>
+      	<span class="example-spacer"></span>
+
+
+        <select [(ngModel)]="translationService.language">
+          <option *ngFor="let language of translationService.languages" [ngValue]="language">{{language}}</option>
+        </select>
+
+			<span class="example-spacer"></span>
+      
+
+			<span class="pointer" (click)="exitClick()" title="Nem is gondolnád mi lesz ha ezt megnyomod">{{'exit' | translate}}
+			</span>
+		</mat-toolbar-row>
+	</mat-toolbar>
+
+	<router-outlet style="background-color:#8F68D8;">
+	</router-outlet>
+
+</div>

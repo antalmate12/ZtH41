@@ -1,0 +1,47 @@
+.logindiv {
+  width: 100%;
+  height:fit-content;
+  display: flex;
+  flex-direction: column;
+  
+}
+/*UserName_Input*/
+
+.kozep {
+    background: rgba(0, 0, 0, .9);
+    width: 270px;
+    position: absolute;
+    top: 50%;
+    margin-bottom: -50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.login_h {
+   color:white;
+    position: relative;
+    top:0;
+    text-shadow: -4px -1px 3px rgba(0, 0, 0, 1);
+    text-align: center;
+}
+.un_input {
+  margin-top:10px;
+    background-color:whitesmoke;
+  align-items: center;
+  flex-grow: 0;
+  width: 200px;
+  align-self: center;
+  
+  justify-content: center
+}
+
+/*
+.bg {
+  background-image: url("https://i.ytimg.com/vi/JcLOxNCOZkk/maxresdefault.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}*/

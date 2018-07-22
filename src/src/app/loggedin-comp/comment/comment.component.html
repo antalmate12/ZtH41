@@ -1,0 +1,43 @@
+<div>
+  <h2 style="color:white;background:#673AB7;padding:10px;">{{'q' | translate}}</h2>
+	<div style="" class="commentkerdes">
+		<h2><b>{{post.cim}}</b> - {{'askedby' | translate}}: 
+    <b id="asd">{{post.iro}}</b>
+		</h2>
+		<p>{{post.leir}}</p>
+	</div>
+
+<h2 style="color:white;background:#673AB7;padding:10px;">{{'ans' | translate}}</h2>
+
+<div style=" background:white;"  
+ *ngFor="let comment of actualComments">
+		<mat-list  id="colorTarget" [ngClass]="'type' + comment.accepted">
+			<mat-list-item  >
+				<img matListAvatar  src="https://www.w3schools.com/w3images/avatar2.png" alt="avatar">
+				<h3 matLine><b> {{comment.iro}} - {{comment.mikor}}</b> </h3>
+				<p matLine  >
+					<span style="overflow-wrap: break-word;"> -- {{comment.leir}} </span>
+				</p>
+				<p matLine >
+					<span><button (click)="comment[i] = 'accept';acceptAnswer(comment.iro,comment.mikor,comment.leir)">{{'good' | translate}}</button></span>
+          <span><button (click)="comment[i] = 'clear';clearAnswer(comment.iro,comment.mikor,comment.leir)">C</button></span>
+          <span><button (click)="comment[i] = 'deny';denyAnswer(comment.iro,comment.mikor,comment.leir)">{{'bad' | translate}}</button></span>
+				</p>
+			</mat-list-item>
+		</mat-list>
+</div>
+
+
+	</div>
+<h2 style="color:white;background:#673AB7;padding:10px;">{{'newans' | translate}}</h2>
+
+	<div class="newans_div">
+    <div style="padding:15px;">
+
+    <mat-form-field>
+		<input matInput #target type="text" placeholder="{{'an' | translate}}" />
+    </mat-form-field>
+<br/>
+		<button mat-raised-button color="primary" class="" (click)="addNewAnswer(target.value)">{{'send' | translate}}</button>
+	</div></div>
+

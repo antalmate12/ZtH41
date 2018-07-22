@@ -1,0 +1,45 @@
+<div>
+	<h1 style="background:#673AB7;padding:10px;">{{'qs' | translate}}</h1>
+
+	<div class="accord mat-app-background basic-container">
+		<mat-accordion *ngFor="let item of Posts">
+
+			<mat-expansion-panel>
+				<mat-expansion-panel-header>
+					<mat-panel-title id="{{item.id}}">
+						{{item.cim}}, {{'askedby' | translate}}: {{item.iro}}
+					</mat-panel-title>
+					<mat-panel-description>
+						{{'when' | translate}}: {{item.mikor}}
+					</mat-panel-description>
+				</mat-expansion-panel-header>
+
+				{{item.leir}}
+				<hr>
+				<button mat-raised-button color="primary" (click)="navigateTo(item.id)">{{'ans' | translate}}</button>
+
+			</mat-expansion-panel>
+
+		</mat-accordion>
+	</div>
+
+
+		<h2 style="color:white;background:#673AB7;padding:10px;">{{'new_q' | translate}}</h2>
+    
+    <div class="basic-container" style="color:black;width:100%;background:white;">
+      <div style="padding:15px;">
+
+      
+		<mat-form-field style="width:50%;">
+			<input matInput #cim type="text" placeholder="{{'cim' | translate}}" />
+		</mat-form-field>
+    
+		<mat-form-field style="width:100%;">
+			<input matInput #text type="text" placeholder="{{'leir' | translate}}" />
+		</mat-form-field>
+
+    <button (click)="addNewPost(cim.value,text.value)" class="bekuld_btn" mat-raised-button color="primary">{{'send' | translate}}</button>
+</div>
+	</div>
+
+</div>
